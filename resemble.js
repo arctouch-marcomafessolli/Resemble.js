@@ -15,15 +15,8 @@ URL: https://github.com/Huddle/Resemble.js
 })(this, function() {
     "use strict";
 
-    var Img;
+    var Img = Image;
     var Canvas;
-
-    if (typeof Image !== "undefined") {
-        Img = Image;
-    } else {
-        Canvas = require("canvas-prebuilt"); // eslint-disable-line global-require
-        Img = Canvas.Image;
-    }
 
     var document =
         typeof window !== "undefined"
